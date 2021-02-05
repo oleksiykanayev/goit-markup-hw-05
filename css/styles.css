@@ -129,7 +129,7 @@ body {
   position: relative;
 }
 .site-nav .current {
-  color: var(--accent-color);
+color: var(--accent-color);
 }
 .site-nav .current::after {
   content: "";
@@ -145,7 +145,7 @@ body {
 
 .link:hover,
 .link:focus {
-  color: var(--accent-color);
+  color: var(--accent-color)
 }
 .link:hover .cnav-icon,
 .link:focus .cnav-icon {
@@ -383,8 +383,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  /*opacity: 1;
-  transition: opacity 250ms var(--cubic-effect);*/
+  /*opacity: 0;
+  transition: transform 250ms var(--cubic-effect);*/
 }
 .regcust-link:hover,
 .regcust-link:focus {
