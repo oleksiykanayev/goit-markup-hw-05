@@ -213,8 +213,8 @@ color: var(--accent-color);
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: start;
+  justify-content: flex-end;
   min-width: 528px;
   min-height: 581px;
   background-color: var(--main-lite-color);
@@ -222,18 +222,18 @@ color: var(--accent-color);
  }
 
  .button-close {
+  display: block;
   position: absolute;
   top: 8px;
   right: 8px;
-  display: block;
   width: 30px;
   height: 30px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-  background-image: url(../img/Vector.svg);
+  background-color: var(--main-lite-color);
+  background-image: url(../image/close.svg);
   background-repeat: no-repeat;
   background-position: center;
-  background-color: var(--main-lite-color);
 }
 
 /* Наши преимущества */
