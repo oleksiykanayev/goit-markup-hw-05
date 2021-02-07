@@ -303,7 +303,7 @@ color: var(--accent-color);
 }
 .activities-card {
   position: relative;
-}
+  }
 .activities-list {
   position: absolute;
   bottom: 0;
