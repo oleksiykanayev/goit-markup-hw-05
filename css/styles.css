@@ -63,11 +63,12 @@ body {
   display: flex;
   align-items: center;
 }
-.sitehead-logo {
+.sitehead-logo.link {
   padding-top: 24px;
   padding-bottom: 25px;
   margin-right: 93px;
   color: var(--logo-color);
+  transition: color 250ms var(--cubic-effect);
 
   font-family: var(--second-font);
   font-weight: 700;
@@ -92,6 +93,7 @@ body {
   padding-top: 32px;
   padding-bottom: 32px;
   color: var(--sec-textcolor);
+  transition: color 250ms var(--cubic-effect);
 
   font-weight: 500;
   line-height: 1.143;
@@ -107,6 +109,7 @@ body {
 .cnav-icon {
   margin-right: 10px;
   fill: var(--main-textcolor);
+  transition: fill 250ms var(--cubic-effect);
 }
 .contact-nav .cnav-link:not(:last-child) {
   margin-right: 50px;
@@ -117,6 +120,7 @@ body {
   padding-top: 32px;
   padding-bottom: 32px;
   color: var(--main-textcolor);
+  transition: color 250ms var(--cubic-effect);
 
   font-weight: 500;
   line-height: 1.143;
@@ -127,6 +131,7 @@ body {
 }
 .snav-link {
   position: relative;
+  transition: color 250ms var(--cubic-effect);
 }
 .site-nav .current {
 color: var(--accent-color);
@@ -215,6 +220,21 @@ color: var(--accent-color);
   background-color: var(--main-lite-color);
   border-radius: 4px; 
  }
+
+ .button-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: block;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  background-image: url(../img/Vector.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--main-lite-color);
+}
 
 /* Наши преимущества */
 .advantages {
@@ -363,6 +383,7 @@ color: var(--accent-color);
   height: 100%;
   background-color: var(--main-lite-color);
   border-radius: 50%;
+  transition: background-color 250ms var(--cubic-effect);
 }
 .social-list-link:hover,
 .social-list-link:focus {
@@ -370,6 +391,7 @@ color: var(--accent-color);
 }
 .social-list-icon {
   fill: var(--iconteam-color);
+  transition: fill 250ms var(--cubic-effect);
 }
 .social-list-link:hover .social-list-icon,
 .social-list-link:focus .social-list-icon {
@@ -395,13 +417,12 @@ color: var(--accent-color);
 }
 .regcust-icon {
   fill: var(--iconteam-color);
+  transition: fill 250ms var(--cubic-effect);
 }
 .regcust-item {
   display: flex;
   min-width: 170px;
   height: 90px;
-  border: 1px solid var(--iconteam-color);
-  border-radius: 4px;
 }
 .regcust-link {
   width: 100%;
@@ -409,19 +430,17 @@ color: var(--accent-color);
   display: flex;
   justify-content: center;
   align-items: center;
-  /*opacity: 0;
-  transition: transform 250ms var(--cubic-effect);*/
+  border: 1px solid var(--iconteam-color);
+  border-radius: 4px;
+  transition: border 250ms var(--cubic-effect);
 }
 .regcust-link:hover,
 .regcust-link:focus {
   border: 1px solid var(--accent-color);
-  border-radius: 4px;
-  /*opacity: 1;*/
 }
 .regcust-link:hover .regcust-icon,
 .regcust-link:focus .regcust-icon {
   fill: var(--accent-color);
-  /*opacity: 1;*/
 }
 /* Портфолио */
 .examples {
@@ -440,12 +459,14 @@ color: var(--accent-color);
   border: none;
   background-color: var(--back2-color);
   color: var(--sec-textcolor);
+  box-shadow: none;
 
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.625;
   text-align: center;
+  transition: background-color 250ms var(--cubic-effect), color 250ms var(--cubic-effect), box-shadow 250ms var(--cubic-effect);
 }
 
 .examples-buttlist .exam-butt:not(:last-child) {
@@ -463,6 +484,8 @@ color: var(--accent-color);
 }
 .examples-link {
   display: block;
+  box-shadow: none;
+  transition: box-shadow 250ms var(--cubic-effect);
 }
 .examples-link:hover,
 .examples-link:focus {
@@ -593,6 +616,7 @@ address {
   width: 100%;
   height: 100%;
   background-color: var(--footsoc-color);
+  transition: background-color 250ms var(--cubic-effect);
   border-radius: 50%;
 }
 .basesocial-list-link:hover,
