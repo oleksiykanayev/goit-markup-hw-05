@@ -586,6 +586,7 @@ address {
   min-width: 231px;
   margin-bottom: 9px;
   color: var(--basecont-color);
+  transition: color 250ms var(--cubic-effect);
 
   line-height: 1.71;
 }
@@ -593,8 +594,15 @@ address {
   display: inline-block;
   min-width: 231px;
   color: var(--basecont-color);
+  transition: color 250ms var(--cubic-effect);
 
   line-height: 1.71;
+}
+.basement-contactmail:hover,
+.basement-contacttel:hover,
+.basement-contactmail:focus,
+.basement-contacttel:focus {
+color: var(--main-lite-color);
 }
 .connect {
   margin-bottom: 20px;
