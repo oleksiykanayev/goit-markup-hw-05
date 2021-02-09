@@ -202,16 +202,22 @@ color: var(--accent-color);
   width: 1600px;
   height: 1024px;
   background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  transition: opacity 250ms var(--cubic-effect);
 }
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
 }
+.backdrop.is-hidden .modal {
+transform: translate(-50%, -50%) scale(1.2);
+}
 .modal { 
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 250ms var(--cubic-effect);
   display: flex;
   align-items: start;
   justify-content: flex-end;
@@ -495,7 +501,7 @@ color: var(--accent-color);
 .overlay-eximg {
   position: relative;
   overflow: hidden;
-  max-width: 370px;
+  width: 370px;
 }
 .overlay {
   width: 100%;
