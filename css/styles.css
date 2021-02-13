@@ -519,16 +519,19 @@ transform: translate(-50%, -50%) scale(1.2);
   transform: translateY(100%);
   position: absolute;
   bottom: 0;
+  opacity: 0;
   transition: transform 250ms var(--cubic-effect);
   background-color: rgba(33, 150, 243, 0.9);
   padding: 63px 24px;
   font-size: 18px;
   line-height: 1.56;
   color: var(--main-lite-color);
+  outline: 2px solid teal;
 }
 .examples-card:hover .overlay,
 .examples-card:focus .overlay {
   transform: translateY(0%);
+  opacity: 1;
 }
 
 
